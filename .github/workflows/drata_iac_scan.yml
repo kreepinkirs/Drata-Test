@@ -1,4 +1,10 @@
-on: push
+on:
+push:
+  branches:
+   'compliance/**’
+pull_request:
+ branches:
+    - main
 jobs:
     drata-iac-scan:
         runs-on: ubuntu-latest
